@@ -1,5 +1,5 @@
 resource "aws_dynamodb_table" "example" {
-  name           = "example-table"
+  name           = "game-session"
   billing_mode   = var.config["billing_mode"]
   read_capacity  = var.config["read_capacity"]
   write_capacity = var.config["write_capacity"]
@@ -7,6 +7,6 @@ resource "aws_dynamodb_table" "example" {
 
   attribute {
     name = "uuid"
-    type = "string"
+    type = "S"
   }
 }
