@@ -22,5 +22,3 @@ variable "sqs_policy_attachments" {
     PushToCloudWatchLogs   = "arn:aws:iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs"
   }
 }
-# WIP
-#here i might need to create new policies depending on what is needed

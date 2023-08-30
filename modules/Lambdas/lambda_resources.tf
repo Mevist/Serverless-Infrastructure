@@ -22,6 +22,8 @@ data "archive_file" "lambda-disconnect_game_zip" {
  output_path = var.lambda_output_files["disconnect_game"]
 }
 
+
+# Lambdas will update when file's hashs changes
 resource "aws_lambda_function" "game_messaging" {
   depends_on = [data.archive_file.lambda-game_messaging_zip]
   function_name = var.game_messaging_config["function_name"]
