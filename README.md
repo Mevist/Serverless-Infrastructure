@@ -7,7 +7,7 @@ Modules:
  * ApiGateway     - Websocket API
  * IAM            - Roles and policies for resources.
  * Lambdas        - Functions for creating connecting/disconnecting websockets, joining game and exchange messages. Details here:
-  [insert link]
+    https://github.com/Mevist/AWS-Lambdas-Serverless/tree/ver2
  * SQS            - Queueing players inputs
  * DynamoDB       - Created seassions of games, mainly storing game UUIDs and playersIDs
  * Integrations   - Resource integrations, Mostly, ApiGateway -> Lambda, expect one ApiGateway -> SQS -> Lambda
